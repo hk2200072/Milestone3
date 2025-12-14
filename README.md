@@ -1,4 +1,4 @@
-# E2E Crypto System (SIMON/SPECK + ElGamal, no external libs)
+# E2E Crypto System
 
 This project integrates symmetric (Simon/Speck) and asymmetric (ElGamal) cryptography into an end-to-end encrypted Client–Server system with a simulated Certificate Authority (CA), certificate issuance/verification, secure handshake, authenticated messaging, and optional key rotation. No external libraries are used (only Python standard library).
 
@@ -66,3 +66,4 @@ Interactive two-terminal examples:
 
 - Client may call `client_rekey` (automated via `rekey_every` in `run_chat`).
 - Rekey encapsulates a new `K||IV` to the server using ElGamal; both sides derive fresh keys and reset counters.
+
